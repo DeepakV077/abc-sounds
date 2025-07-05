@@ -1,8 +1,9 @@
 *{
-    margin:0;
-    border:0;
-    padding:0;
-    box-sizing:border-box;
+    box-sizing: border-box;
+    
+    margin: 10px;
+    padding: 20px;
+    font-size: 16px;
 }
 body{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -23,9 +24,68 @@ h1{
     margin-top:10px;
     color: #34495e;
 }
-.alphabet-container{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    margin-top:20px;
+.alphabet-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+button.letters{
+    width: 100px;
+    height: 100px;
+    font-size: 2em;
+    margin: 10px auto;
+    border-radius: 50%;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+footer{
+    text-align:center;
+    padding: 20px;
+    background-color: #76afe8;
+    border-radius: 20px;;
+}
+button.letters:hover {
+    background-color: #2980b9;
+}
+button.letters:active {
+    background-color: #1a5276;
+}
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    .ptext {
+        font-size: 1.125em;
+    }
+    button.letters {
+        width: 80px;
+        height: 80px;
+        font-size: 1.5em;
+    }
+}
+.pressed {
+    transform: scale(0.95);
+    background-color: #ffc107;
+    box-shadow: 0 3px #666;
+    transition: all 0.1s;
+}
+.reset-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
